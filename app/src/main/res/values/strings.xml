@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppDev Pricelist App</string>
+
+    <string name="studNameSec">3BSIT-2 | COLONIA, Kurt Robin P.</string>
+    <string name="title">Price List App</string>
+
+    <string name="searchHint">Search for Item...</string>
+
+    <string name="nameHint">Item Name</string>
+    <string name="priceHint">Item Price</string>
+    <string name="saveHint">Save Item to List</string>
+
+</resources>
