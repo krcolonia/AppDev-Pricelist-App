@@ -80,17 +80,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun filterListView(query: String?) {
-        if(query != null) {
-            val filterList = priceList.filter { it.contains(query, true) }
+        if(query == null)
+            return
 
-            if(filterList.isEmpty()) {
-                Toast.makeText(applicationContext,"No Item Found", Toast.LENGTH_LONG).show()
-            }
-            else {
-                updateFilteredListView(filterList)
-            }
-        }
+        val filterList = priceList.filter { it.contains(query, true) }
 
+        if(filterList.isEmpty())
+            Toast.makeText(applicationContext,"No Item Found", Toast.LENGTH_LONG).show()
+        else
+            updateFilteredListView(filterList)
     }
 
     private fun updateListView() {
